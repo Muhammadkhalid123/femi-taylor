@@ -1,7 +1,6 @@
 "use client";
 
 import { ThemeProvider } from "@/components/theme-provider";
-import { CartProvider } from "@/context/cart-context";
 
 export function Providers({ children }: { children: React.ReactNode }) {
   return (
@@ -11,7 +10,7 @@ export function Providers({ children }: { children: React.ReactNode }) {
       enableSystem
       disableTransitionOnChange
     >
-      <CartProvider>{children}</CartProvider>
+      {children}
     </ThemeProvider>
   );
 }

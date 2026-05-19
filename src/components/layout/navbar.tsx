@@ -3,16 +3,15 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { Menu, X, ShoppingCart } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
-import { useCart } from "@/context/cart-context";
 import ThemeToggle from "@/components/ui/theme-toggle";
 
 const navLinks = [
   { name: "About", href: "/about" },
   { name: "The Book", href: "/book" },
   { name: "Legacy", href: "/legacy" },
-  { name: "Shop", href: "/shop" },
+  { name: "Portfolio", href: "/portfolio" },
   { name: "Events", href: "/events" },
   { name: "Press", href: "/press" },
   { name: "Contact", href: "/contact" },
@@ -21,7 +20,6 @@ const navLinks = [
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  const { totalItems } = useCart();
   const pathname = usePathname();
 
   useEffect(() => {
@@ -33,12 +31,6 @@ export default function Navbar() {
   useEffect(() => {
     setIsOpen(false);
   }, [pathname]);
-
-  const cartBadge = totalItems > 0 && (
-    <span className="absolute -top-1 -right-1 bg-accent text-accent-foreground text-[10px] font-bold min-w-[18px] h-[18px] flex items-center justify-center px-1 rounded-full">
-      {totalItems}
-    </span>
-  );
 
   return (
     <nav
@@ -76,18 +68,10 @@ export default function Navbar() {
               </Link>
             ))}
             <ThemeToggle />
-            <Link href="/cart" className="relative p-2 hover:text-primary transition-colors">
-              <ShoppingCart size={20} />
-              {cartBadge}
-            </Link>
           </div>
 
           <div className="md:hidden flex items-center space-x-2">
             <ThemeToggle />
-            <Link href="/cart" className="relative p-2">
-              <ShoppingCart size={20} />
-              {cartBadge}
-            </Link>
             <button
               type="button"
               onClick={() => setIsOpen(!isOpen)}

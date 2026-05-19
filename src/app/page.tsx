@@ -2,7 +2,6 @@ import HeroSection from "@/components/sections/hero-section";
 import StatsBand from "@/components/sections/stats-band";
 import DualIdentityIntro from "@/components/sections/dual-identity-intro";
 import StarWarsSection from "@/components/sections/star-wars-section";
-import FeaturedBook from "@/components/sections/featured-book";
 import InteractiveTimeline from "@/components/sections/interactive-timeline";
 import SuccessStories from "@/components/sections/success-stories";
 import ReviewsSection from "@/components/sections/reviews-section";
@@ -19,7 +18,6 @@ export default function Home() {
       <StatsBand />
       <DualIdentityIntro />
       <StarWarsSection />
-      <FeaturedBook />
       <InteractiveTimeline />
       <SuccessStories />
       <ReviewsSection variant="full" />

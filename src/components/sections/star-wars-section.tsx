@@ -53,7 +53,7 @@ export default function StarWarsSection() {
           >
             <div className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl border-8 border-muted">
               <Image
-                src="https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&q=80" // Placeholder
+                src="/portfolio/WhatsApp Image 2026-05-16 at 2.17.36 PM.jpeg"
                 alt="Oola Star Wars"
                 fill
                 className="object-cover"

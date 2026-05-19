@@ -18,11 +18,11 @@ export default function LegacyPage() {
       <PhotoGallery />
       <PageCta
         title="Own a Piece of the Legacy"
-        description="Signed books, exclusive prints, and memorabilia from four decades in the arts."
-        primaryLabel="Visit the Shop"
-        primaryHref="/shop"
-        secondaryLabel="Get the Book"
-        secondaryHref="/book"
+        description="Inquire about signed books, exclusive prints, and custom memorabilia from four decades in the arts."
+        primaryLabel="Inquire for Orders"
+        primaryHref="/contact?subject=Signed%20Memorabilia%20Inquiry"
+        secondaryLabel="Explore Portfolio"
+        secondaryHref="/portfolio"
         variant="accent"
       />
       <Footer />

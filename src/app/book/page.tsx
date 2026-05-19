@@ -20,11 +20,11 @@ export default function BookPage() {
       <SampleChapterSection />
       <PageCta
         title="Ready to Begin the Journey?"
-        description="Order your copy today — signed editions available while supplies last."
-        primaryLabel="Order Now"
-        primaryHref="/shop"
-        secondaryLabel="Browse Shop"
-        secondaryHref="/shop"
+        description="Submit an inquiry to order your copy today — signed editions available while supplies last."
+        primaryLabel="Inquire to Order"
+        primaryHref="/contact?subject=Inquiry about ordering My Journey"
+        secondaryLabel="Explore Portfolio"
+        secondaryHref="/portfolio"
       />
       <Footer />
     </main>

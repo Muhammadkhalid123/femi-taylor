@@ -2,8 +2,8 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { FileText, Download, ArrowRight, ChevronDown } from "lucide-react";
-import { useCart } from "@/context/cart-context";
+import { FileText, Download, ArrowRight, ChevronDown, Mail } from "lucide-react";
+import Link from "next/link";
 
 const sampleText = `I still remember the first time I stepped onto that stage in London. The lights were blinding, the orchestra was swelling, and my heart was pounding so hard I thought everyone in the audience could hear it.
 
@@ -12,19 +12,8 @@ Growing up in Ibadan, Nigeria, I never imagined I would one day be part of a pro
 That night, as Tantomile, I understood that performance is not about perfection. It is about presence. About letting the audience feel something true, even if only for a moment.`;
 
 export default function SampleChapter() {
-  const { addToCart } = useCart();
   const [isReading, setIsReading] = useState(false);
   const [downloaded, setDownloaded] = useState(false);
-
-  const handleAddToCart = () => {
-    addToCart({
-      id: "book-hardcover-sample",
-      name: "My Journey (Hardcover)",
-      price: 24.99,
-      image: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&q=80",
-      quantity: 1,
-    });
-  };
 
   const handleDownload = () => {
     setDownloaded(true);
@@ -87,14 +76,13 @@ export default function SampleChapter() {
           &ldquo;I wanted to share this part of my story because it&apos;s where everything began.
           The fear, the excitement, and the unknown.&rdquo;
         </p>
-        <button
-          type="button"
-          onClick={handleAddToCart}
-          className="w-full py-4 bg-primary text-white rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-primary/90 transition-all"
+        <Link
+          href="/contact?subject=Inquiry about ordering the book My Journey"
+          className="w-full py-4 bg-primary text-white rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-primary/90 transition-all text-center"
         >
-          Order Now
+          <span>Inquire to Order</span>
           <ArrowRight size={18} />
-        </button>
+        </Link>
       </div>
     </div>
   );

@@ -2,9 +2,9 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { ShoppingCart, Check } from "lucide-react";
+import { Mail, Check } from "lucide-react";
 import { useState } from "react";
-import { useCart } from "@/context/cart-context";
+import Link from "next/link";
 
 const formats = [
   { id: "hardcover", label: "Hardcover", price: "$24.99" },
@@ -14,30 +14,7 @@ const formats = [
 
 export default function BookHero() {
   const [selectedFormat, setSelectedFormat] = useState("hardcover");
-  const { addToCart } = useCart();
-
-  const handleAddToCart = () => {
-    const format = formats.find((f) => f.id === selectedFormat);
-    if (format) {
-      addToCart({
-        id: `book-${selectedFormat}`,
-        name: `My Journey (${format.label})`,
-        price: parseFloat(format.price.replace("$", "")),
-        image: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&q=80",
-        quantity: 1,
-      });
-    }
-  };
-
-  const handleAddSigned = () => {
-    addToCart({
-      id: "book-signed",
-      name: "My Journey (Signed Edition)",
-      price: 49.99,
-      image: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&q=80",
-      quantity: 1,
-    });
-  };
+  const selectedLabel = formats.find((f) => f.id === selectedFormat)?.label || "Hardcover";
 
   return (
     <section className="relative pt-32 pb-20 bg-background overflow-hidden">
@@ -107,19 +84,20 @@ export default function BookHero() {
             </div>
 
             <div className="flex flex-col sm:flex-row items-center gap-4">
-              <button 
-                onClick={handleAddToCart}
+              <Link 
+                href={`/contact?subject=Inquiry about ordering ${selectedLabel} edition of My Journey`}
                 className="w-full sm:w-auto px-10 py-5 bg-primary text-white rounded-full font-bold flex items-center justify-center gap-3 hover:bg-primary/90 transition-all shadow-xl shadow-primary/20 transform hover:-translate-y-1"
               >
-                <ShoppingCart size={24} />
-                Order Your Copy
-              </button>
-              <button 
-                onClick={handleAddSigned}
-                className="w-full sm:w-auto px-10 py-5 bg-accent text-accent-foreground rounded-full font-bold hover:bg-accent/90 transition-all transform hover:-translate-y-1"
+                <Mail size={20} />
+                Inquire to Buy
+              </Link>
+              <Link 
+                href="/contact?subject=Inquiry about Signed Edition of My Journey"
+                className="w-full sm:w-auto px-10 py-5 bg-accent text-accent-foreground rounded-full font-bold flex items-center justify-center gap-3 hover:bg-accent/90 transition-all transform hover:-translate-y-1"
               >
+                <Mail size={20} />
                 Get Signed Edition
-              </button>
+              </Link>
             </div>
 
             <div className="mt-8 flex items-center justify-center lg:justify-start gap-6 text-sm text-muted-foreground font-medium">
