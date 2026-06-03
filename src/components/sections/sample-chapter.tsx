@@ -77,7 +77,7 @@ export default function SampleChapter() {
           The fear, the excitement, and the unknown.&rdquo;
         </p>
         <Link
-          href="/contact?subject=Inquiry about ordering the book My Journey"
+          href="/contact?subject=Inquiry about ordering the book From Mud Huts to Star Wars and Beyond"
           className="w-full py-4 bg-primary text-white rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-primary/90 transition-all text-center"
         >
           <span>Inquire to Order</span>

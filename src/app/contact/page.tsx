@@ -12,10 +12,10 @@ export default function ContactPage() {
     <main className="min-h-screen">
       <Navbar />
       <ContactHero />
-      <ContactDetails />
+      {/* <ContactDetails /> */}
       <ContactFormSection />
       <ContactFaq />
-      <FanMoments />
+      {/* <FanMoments /> */}
       <NewsletterCta />
       <Footer />
     </main>

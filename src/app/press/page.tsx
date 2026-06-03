@@ -4,7 +4,6 @@ import PressHero from "@/components/sections/press-hero";
 import BioVersions from "@/components/sections/bio-versions";
 import MediaCoverage from "@/components/sections/media-coverage";
 import PressQuotes from "@/components/sections/press-quotes";
-import PressKitDownloads from "@/components/sections/press-kit-downloads";
 import PageCta from "@/components/sections/page-cta";
 
 export default function PressPage() {
@@ -19,11 +18,6 @@ export default function PressPage() {
       </section>
       <MediaCoverage />
       <PressQuotes />
-      <section className="py-24 bg-muted/30">
-        <div className="max-w-lg mx-auto px-4 sm:px-6 lg:px-8">
-          <PressKitDownloads />
-        </div>
-      </section>
       <PageCta
         title="Media Inquiries Welcome"
         description="Interview requests, press kits, and high-resolution assets available for accredited media."

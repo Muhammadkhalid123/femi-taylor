@@ -17,12 +17,12 @@ export default function BookPage() {
       <ReadingGuide />
       <AuthorNoteSection />
       <ReviewsSection variant="full" />
-      <SampleChapterSection />
+      {/* <SampleChapterSection /> */}
       <PageCta
         title="Ready to Begin the Journey?"
         description="Submit an inquiry to order your copy today — signed editions available while supplies last."
         primaryLabel="Inquire to Order"
-        primaryHref="/contact?subject=Inquiry about ordering My Journey"
+        primaryHref="/contact?subject=Inquiry about ordering From Mud Huts to Star Wars and Beyond"
         secondaryLabel="Explore Portfolio"
         secondaryHref="/portfolio"
       />

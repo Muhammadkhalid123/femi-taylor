@@ -22,17 +22,17 @@ export default function CatsSection() {
             </h3>
             <div className="prose prose-lg dark:prose-invert text-muted-foreground">
               <p>
-                Before the galaxy, there were the Jellicle Cats. Femi originated the role of 
-                Tantomile in the 1981 original London production of Andrew Lloyd Webber's Cats, 
+                Before the galaxy, there were the Jellicle Cats. Femi originated the role of
+                Tantomile in the 1981 original London production of Andrew Lloyd Webber's Cats,
                 a production that redefined musical theatre.
               </p>
               <p className="mt-4">
-                Her connection to the show came full circle in 1998, when she was cast in 
-                the filmed version of Cats. In a rare tribute to her talent, the character 
+                Her connection to the show came full circle in 1998, when she was cast in
+                the filmed version of Cats. In a rare tribute to her talent, the character
                 'Exotica' was created specifically for her by the creative team.
               </p>
             </div>
-            
+
             <ul className="mt-10 space-y-4">
               <li className="flex items-center gap-4 p-4 bg-background rounded-xl border border-border shadow-sm">
                 <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center text-primary font-bold">1</div>
@@ -59,7 +59,7 @@ export default function CatsSection() {
           >
             <div className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl border-8 border-white dark:border-gray-800">
               <Image
-                src="https://images.unsplash.com/photo-1514302240736-b1fee598926e?auto=format&fit=crop&q=80" // Placeholder
+                src="/portfolio/catts.png"
                 alt="Cats Musical"
                 fill
                 className="object-cover"

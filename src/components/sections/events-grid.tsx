@@ -16,7 +16,7 @@ const events = [
     date: "August 5, 2026",
     location: "Olympia London",
     type: "Book Signing",
-    description: "Official signing for 'My Journey: From the Galaxy to the Page'."
+    description: "Official signing for 'From Mud Huts to Star Wars and Beyond'."
   },
   {
     title: "Global Sci-Fi Expo",

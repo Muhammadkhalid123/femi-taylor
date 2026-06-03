@@ -12,8 +12,8 @@ const navLinks = [
   { name: "The Book", href: "/book" },
   { name: "Legacy", href: "/legacy" },
   { name: "Portfolio", href: "/portfolio" },
-  { name: "Events", href: "/events" },
-  { name: "Press", href: "/press" },
+  // { name: "Events", href: "/events" },
+  // { name: "Press", href: "/press" },
   { name: "Contact", href: "/contact" },
 ];
 

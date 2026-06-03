@@ -6,12 +6,12 @@ import Image from "next/image";
 import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 const images = [
-  { src: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80", caption: "Stage presence" },
-  { src: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&q=80", caption: "Behind the curtain" },
-  { src: "https://images.unsplash.com/photo-1514302240736-b1fee598926e?auto=format&fit=crop&q=80", caption: "In the spotlight" },
-  { src: "https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&q=80", caption: "Author's journey" },
-  { src: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80", caption: "Fan conventions" },
-  { src: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?auto=format&fit=crop&q=80", caption: "Legacy moments" },
+  { src: "/portfolio/WhatsApp Image 2026-05-14 at 9.41.37 PM.jpeg", caption: "Professional Portrait" },
+  { src: "/portfolio/WhatsApp Image 2026-05-16 at 2.17.36 PM.jpeg", caption: "Oola / Star Wars Legacy" },
+  { src: "/portfolio/catts.png", caption: "Cats / Stage Performance" },
+  { src: "/portfolio/WhatsApp Image 2026-05-14 at 9.41.39 PM.jpeg", caption: "Behind the Curtain" },
+  { src: "/portfolio/WhatsApp Image 2026-05-14 at 9.41.41 PM.jpeg", caption: "Fan Conventions" },
+  { src: "/portfolio/WhatsApp Image 2026-05-14 at 9.42.47 PM.jpeg", caption: "Legacy Moments" },
 ];
 
 export default function PhotoGallery() {

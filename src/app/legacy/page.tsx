@@ -16,7 +16,7 @@ export default function LegacyPage() {
       <CatsSection />
       <FanMoments />
       <PhotoGallery />
-      <PageCta
+      {/* <PageCta
         title="Own a Piece of the Legacy"
         description="Inquire about signed books, exclusive prints, and custom memorabilia from four decades in the arts."
         primaryLabel="Inquire for Orders"
@@ -24,7 +24,7 @@ export default function LegacyPage() {
         secondaryLabel="Explore Portfolio"
         secondaryHref="/portfolio"
         variant="accent"
-      />
+      /> */}
       <Footer />
     </main>
   );

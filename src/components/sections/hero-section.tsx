@@ -36,7 +36,7 @@ export default function HeroSection() {
             FEMI TAYLOR
           </h1>
           <p className="text-lg sm:text-xl text-gray-300 mb-10 max-w-2xl mx-auto font-light italic">
-            "From the Galaxy Far, Far Away to Pages Near You"
+            "From Mud Huts to Star Wars and Beyond"
           </p>
           
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

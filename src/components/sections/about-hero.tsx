@@ -33,7 +33,7 @@ export default function AboutHero() {
           >
             <div className="relative w-full max-w-md aspect-[4/5] mx-auto rounded-2xl overflow-hidden shadow-2xl border-8 border-white dark:border-gray-800">
               <Image
-                src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80" // Placeholder for Femi's portrait
+                src="/portfolio/WhatsApp Image 2026-05-14 at 9.41.37 PM.jpeg"
                 alt="Femi Taylor Portrait"
                 fill
                 className="object-cover"

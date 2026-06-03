@@ -30,7 +30,7 @@ export default function BookHero() {
             <div className="relative w-full max-w-md aspect-[2/3] mx-auto shadow-[30px_30px_60px_-15px_rgba(0,0,0,0.4)] rounded-lg overflow-hidden border-4 border-white dark:border-gray-800">
               <Image
                 src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&q=80"
-                alt="My Journey Book Cover"
+                alt="From Mud Huts to Star Wars and Beyond Book Cover"
                 fill
                 className="object-cover"
                 priority
@@ -46,7 +46,7 @@ export default function BookHero() {
             className="flex-1 text-center lg:text-left"
           >
             <h1 className="text-4xl sm:text-6xl font-serif font-bold mb-4 leading-tight text-foreground">
-              My Journey: From the Galaxy to the Page
+              From Mud Huts to Star Wars and Beyond
             </h1>
             <p className="text-2xl text-primary font-medium mb-8 italic">
               "The untold story of a Star Wars icon and a survivor's path to art."
@@ -85,14 +85,14 @@ export default function BookHero() {
 
             <div className="flex flex-col sm:flex-row items-center gap-4">
               <Link 
-                href={`/contact?subject=Inquiry about ordering ${selectedLabel} edition of My Journey`}
+                href={`/contact?subject=Inquiry about ordering ${selectedLabel} edition of From Mud Huts to Star Wars and Beyond`}
                 className="w-full sm:w-auto px-10 py-5 bg-primary text-white rounded-full font-bold flex items-center justify-center gap-3 hover:bg-primary/90 transition-all shadow-xl shadow-primary/20 transform hover:-translate-y-1"
               >
                 <Mail size={20} />
                 Inquire to Buy
               </Link>
               <Link 
-                href="/contact?subject=Inquiry about Signed Edition of My Journey"
+                href="/contact?subject=Inquiry about Signed Edition of From Mud Huts to Star Wars and Beyond"
                 className="w-full sm:w-auto px-10 py-5 bg-accent text-accent-foreground rounded-full font-bold flex items-center justify-center gap-3 hover:bg-accent/90 transition-all transform hover:-translate-y-1"
               >
                 <Mail size={20} />
