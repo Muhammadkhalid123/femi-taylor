@@ -29,7 +29,7 @@ export default function BookHero() {
           >
             <div className="relative w-full max-w-md aspect-[2/3] mx-auto shadow-[30px_30px_60px_-15px_rgba(0,0,0,0.4)] rounded-lg overflow-hidden border-4 border-white dark:border-gray-800">
               <Image
-                src="https://images.unsplash.com/photo-1544947950-fa07a98d237f?auto=format&fit=crop&q=80"
+                src="/femi-book.jpeg"
                 alt="From Mud Huts to Star Wars and Beyond Book Cover"
                 fill
                 className="object-cover"
@@ -54,8 +54,8 @@ export default function BookHero() {
 
             <div className="space-y-6 mb-10">
               <p className="text-lg text-muted-foreground leading-relaxed">
-                Discover the intimate memoirs of Femi Taylor. This book takes you 
-                behind the scenes of the world's biggest film franchise and into 
+                Discover the intimate memoirs of Femi Taylor. This book takes you
+                behind the scenes of the world's biggest film franchise and into
                 the heart of a woman who danced her way to global stardom.
               </p>
 
@@ -65,11 +65,10 @@ export default function BookHero() {
                   <button
                     key={format.id}
                     onClick={() => setSelectedFormat(format.id)}
-                    className={`p-4 rounded-2xl border-2 transition-all flex flex-col items-center gap-1 ${
-                      selectedFormat === format.id
-                        ? "border-primary bg-primary/5 shadow-md"
-                        : "border-border hover:border-primary/50"
-                    }`}
+                    className={`p-4 rounded-2xl border-2 transition-all flex flex-col items-center gap-1 ${selectedFormat === format.id
+                      ? "border-primary bg-primary/5 shadow-md"
+                      : "border-border hover:border-primary/50"
+                      }`}
                   >
                     <span className="text-xs uppercase tracking-widest font-bold opacity-60">
                       {format.label}
@@ -84,14 +83,14 @@ export default function BookHero() {
             </div>
 
             <div className="flex flex-col sm:flex-row items-center gap-4">
-              <Link 
+              <Link
                 href={`/contact?subject=Inquiry about ordering ${selectedLabel} edition of From Mud Huts to Star Wars and Beyond`}
                 className="w-full sm:w-auto px-10 py-5 bg-primary text-white rounded-full font-bold flex items-center justify-center gap-3 hover:bg-primary/90 transition-all shadow-xl shadow-primary/20 transform hover:-translate-y-1"
               >
                 <Mail size={20} />
                 Inquire to Buy
               </Link>
-              <Link 
+              <Link
                 href="/contact?subject=Inquiry about Signed Edition of From Mud Huts to Star Wars and Beyond"
                 className="w-full sm:w-auto px-10 py-5 bg-accent text-accent-foreground rounded-full font-bold flex items-center justify-center gap-3 hover:bg-accent/90 transition-all transform hover:-translate-y-1"
               >

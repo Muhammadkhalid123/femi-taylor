@@ -22,17 +22,17 @@ export default function StarWarsSection() {
             </h3>
             <div className="prose prose-lg dark:prose-invert text-muted-foreground">
               <p>
-                In 1983, Femi Taylor made cinematic history as Oola, the Twi'lek slave dancer 
-                in Jabba's Palace. Her performance, though brief, became one of the most 
+                In 1983, Femi Taylor made cinematic history as Oola, the Twi'lek slave dancer
+                in Jabba's Palace. Her performance, though brief, became one of the most
                 memorable and beloved in the Star Wars saga.
               </p>
               <p className="mt-4">
-                Fourteen years later, Femi achieved the unique distinction of being the only 
-                original performer called back by George Lucas to film additional scenes 
+                Fourteen years later, Femi achieved the unique distinction of being the only
+                original performer called back by George Lucas to film additional scenes
                 for the 1997 Special Edition—looking exactly the same as she did in 1983.
               </p>
             </div>
-            
+
             <div className="mt-10 grid grid-cols-2 gap-8">
               <div className="border-l-4 border-accent pl-6">
                 <span className="block text-3xl font-bold">1983</span>
@@ -53,10 +53,10 @@ export default function StarWarsSection() {
           >
             <div className="relative aspect-video rounded-3xl overflow-hidden shadow-2xl border-8 border-muted">
               <Image
-                src="/portfolio/WhatsApp Image 2026-05-16 at 2.17.36 PM.jpeg"
+                src="/portfolio/WhatsApp Image 2026-05-16 at 2.17.39 PM.jpeg"
                 alt="Oola Star Wars"
                 fill
-                className="object-cover"
+                className="object-contain"
               />
             </div>
             {/* Quote Overlay */}
