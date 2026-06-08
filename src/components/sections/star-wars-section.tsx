@@ -18,18 +18,14 @@ export default function StarWarsSection() {
               Return of the Jedi
             </h2>
             <h3 className="text-4xl sm:text-5xl font-serif font-bold mb-6">
-              The Legend of Oola
+              The Legacy of Oola
             </h3>
             <div className="prose prose-lg dark:prose-invert text-muted-foreground">
               <p>
-                In 1983, Femi Taylor made cinematic history as Oola, the Twi'lek slave dancer
-                in Jabba's Palace. Her performance, though brief, became one of the most
-                memorable and beloved in the Star Wars saga.
+                In 1983, Femi Taylor appeared as Oola in Return of the Jedi, creating a character whose impact would far outlive her brief appearance on screen. Oola remains one of the most recognisable and beloved characters in the Star Wars universe.
               </p>
               <p className="mt-4">
-                Fourteen years later, Femi achieved the unique distinction of being the only
-                original performer called back by George Lucas to film additional scenes
-                for the 1997 Special Edition—looking exactly the same as she did in 1983.
+                More than a decade later, George Lucas invited Femi to reprise the role for the Special Edition, making her the only original performer recalled to film new scenes. The return remains a unique chapter in both her career and Star Wars history.
               </p>
             </div>
 
@@ -62,7 +58,7 @@ export default function StarWarsSection() {
             {/* Quote Overlay */}
             <div className="absolute -bottom-6 -right-6 md:right-12 bg-accent text-accent-foreground p-6 rounded-2xl shadow-xl max-w-xs">
               <p className="text-sm font-bold italic">
-                "Being part of the Star Wars universe is a gift that keeps on giving."
+                “I never imagined that a role filmed in 1983 would continue to connect me with people across generations and around the world.”
               </p>
             </div>
           </motion.div>

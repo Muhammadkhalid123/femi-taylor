@@ -12,8 +12,7 @@ export default function Footer() {
               FEMI TAYLOR
             </Link>
             <p className="text-muted-foreground max-w-sm mb-8 leading-relaxed">
-              Star Wars Icon, Original Cats Cast member, and Author. 
-              Sharing stories of art, resilience, and a life lived across galaxies.
+              Actor, Dancer, Author, and beloved Star Wars performer. From the original cast of Cats to a galaxy far, far away, sharing stories from a remarkable creative journey.
             </p>
             <div className="flex space-x-5">
               <a href="#" className="text-muted-foreground hover:text-primary transition-colors">

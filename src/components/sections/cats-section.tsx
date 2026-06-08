@@ -18,18 +18,14 @@ export default function CatsSection() {
               West End & Film
             </h2>
             <h3 className="text-4xl sm:text-5xl font-serif font-bold mb-6">
-              The Magic of Cats
+              The World of Cats
             </h3>
             <div className="prose prose-lg dark:prose-invert text-muted-foreground">
               <p>
-                Before the galaxy, there were the Jellicle Cats. Femi originated the role of
-                Tantomile in the 1981 original London production of Andrew Lloyd Webber's Cats,
-                a production that redefined musical theatre.
+                Before the galaxy, there was the world of Cats. Femi Taylor originated the role of Tantomile in the original 1981 London production of Andrew Lloyd Webber’s groundbreaking musical. During the filming of Return of the Jedi, she went on to perform the role of Bombalurina in London before later being invited to join the Melbourne production of Cats.
               </p>
               <p className="mt-4">
-                Her connection to the show came full circle in 1998, when she was cast in
-                the filmed version of Cats. In a rare tribute to her talent, the character
-                'Exotica' was created specifically for her by the creative team.
+                Her connection to the production came full circle years later when she appeared in the filmed version of Cats, for which the character Exotica was created especially for her by the creative team in recognition of her unique artistry and presence.
               </p>
             </div>
 

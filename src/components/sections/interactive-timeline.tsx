@@ -6,34 +6,109 @@ import { cn } from "@/lib/utils";
 
 const timelineData = [
   {
-    year: "1961",
-    title: "Roots in Nigeria",
-    description: "Born in Ibadan, Nigeria, setting the stage for a global journey of cultural discovery and resilience."
+    year: "1963",
+    title: "A New Beginning",
+    description: "Following her adoption, Femi began a new chapter of life in England, carrying with her roots that would remain part of her story forever."
+  },
+  {
+    year: "1965",
+    title: "Discovering Dance",
+    description: "After attending her first dance class, Femi found something she instinctively knew she loved. It was the beginning of a lifelong passion."
+  },
+  {
+    year: "1976",
+    title: "London School of Contemporary Dance",
+    description: "Awarded a place at one of Britain’s leading dance institutions, beginning professional training that would shape her future career."
+  },
+  {
+    year: "1977",
+    title: "Bubbling Brown Sugar",
+    description: "Cast in her first major West End production. Beyond the discipline of professional theatre, the show celebrated Black culture, confidence, and identity, and marked the beginning of Femi feeling truly beautiful in her own skin."
+  },
+  {
+    year: "1978",
+    title: "The Apple",
+    description: "Appeared as a dancer in the cult musical film The Apple, adding screen experience to her growing stage career."
+  },
+  {
+    year: "1979",
+    title: "Training in New York",
+    description: "Travelled to New York to study at The Alvin Ailey School, immersing herself in one of the world’s most influential centres of dance training."
+  },
+  {
+    year: "1979",
+    title: "The Wiz",
+    description: "Performed in The Wiz at Sheffield’s Crucible Theatre, further expanding her theatrical experience and versatility as a performer."
   },
   {
     year: "1981",
     title: "Cats (London)",
-    description: "Originated the legendary role of Tantomile in the original West End cast of Cats, changing musical theatre history forever."
+    description: "Joined the original London cast of Andrew Lloyd Webber’s Cats, originating the role of Tantomile in a production that would become one of the most successful musicals of all time."
+  },
+  {
+    year: "1982",
+    title: "Valmouth",
+    description: "Appeared in Valmouth at Chichester Festival Theatre, continuing to build a diverse and respected theatre career."
   },
   {
     year: "1983",
-    title: "Star Wars Icon",
-    description: "Cast as the iconic Twi'lek dancer Oola in 'Return of the Jedi', etching her name into cinematic science-fiction history."
+    title: "Returning to Nigeria",
+    description: "Returned to Nigeria to meet her biological father and four siblings, reconnecting with a part of her identity she had never known."
   },
   {
-    year: "1997",
-    title: "The Special Edition",
-    description: "Recalled to the set by George Lucas to reprise her iconic role, being the only original performer to film new scenes for the Special Edition."
+    year: "1983",
+    title: "A Place of Her Own",
+    description: "Purchased her first apartment, marking an important step towards independence and self-reliance."
   },
   {
-    year: "1998",
-    title: "Cats Film",
-    description: "Invited by Andrew Lloyd Webber to create and perform the brand-new character 'Exotica' specifically for the Cats cinematic release."
+    year: "1987",
+    title: "A New Chapter in Australia",
+    description: "After leaving a difficult period behind, Femi relocated to Australia and joined the Melbourne production of Cats"
+  },
+  {
+    year: "1989",
+    title: "Australian Film Work",
+    description: "Expanded her screen career in Australia, appearing in the films Flirting and A Kink in the Picasso."
+  },
+  {
+    year: "1990",
+    title: "Buddy",
+    description: "Toured Australia in Buddy, continuing to build a successful theatre career abroad."
+  },
+  {
+    year: "1993",
+    title: "Returning Home",
+    description: "Returned to the United Kingdom after six years living and working in Australia."
+  },
+  {
+    year: "1995",
+    title: "Return to Star Wars",
+    description: "Invited back by George Lucas to reprise the role of Oola, becoming the only original performer to film new scenes for the Special Edition."
+  },
+  {
+    year: "1996",
+    title: "Jesus Christ Superstar",
+    description: "Appeared in Jesus Christ Superstar, marking the culmination of an extraordinary chapter in West End theatre."
+  },
+  {
+    year: "2000 & 2002",
+    title: "Motherhood",
+    description: "The birth of my two sons."
+  },
+  {
+    year: "2007",
+    title: "A New Creative Direction",
+    description: "Graduated from KLC School of Design, earning a diploma in Interior Design and beginning a new creative chapter."
+  },
+  {
+    year: "2016",
+    title: "Zambezi Designs",
+    description: "Founded Zambezi Designs, combining creativity, vision, and independence."
   },
   {
     year: "Present",
-    title: "The Author's Journey",
-    description: "Connecting with fans globally, speaking at international conventions, and sharing her deep artistic legacy through writing and memoirs."
+    title: "The Writer’s Journey",
+    description: "Drawing together a lifetime of experiences, Femi now shares her story through writing, reflection, and memoir."
   }
 ];
 

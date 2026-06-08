@@ -76,7 +76,7 @@ export default function PortfolioClient({ initialImages }: PortfolioClientProps)
             className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary/5 text-primary text-xs font-bold tracking-widest uppercase mb-6"
           >
             <Sparkles size={12} className="text-accent animate-pulse" />
-            Legacy Archive
+            Portfolio
           </motion.div>
           <motion.h1
             initial={{ opacity: 0, y: 10 }}
@@ -84,7 +84,7 @@ export default function PortfolioClient({ initialImages }: PortfolioClientProps)
             transition={{ duration: 0.6, delay: 0.1 }}
             className="text-4xl sm:text-6xl font-serif font-bold mb-6 tracking-tight text-foreground"
           >
-            The Official <span className="text-primary italic">Portfolio</span>
+            Visual <span className="text-primary italic">Journey</span>
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 10 }}
@@ -92,9 +92,7 @@ export default function PortfolioClient({ initialImages }: PortfolioClientProps)
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-lg text-muted-foreground leading-relaxed"
           >
-            Explore the visual chronicle of Femi Taylor's extraordinary career. From her iconic performance 
-            as Oola in <em>Star Wars: Return of the Jedi</em> and Cats on stage and screen, to live events 
-            and global conventions.
+            Explore the photographs, performances, and memories that capture the many chapters of Femi Taylor’s life and career.
           </motion.p>
         </div>
 

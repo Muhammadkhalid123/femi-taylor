@@ -15,10 +15,9 @@ export default function LegacyHero() {
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="text-5xl sm:text-7xl font-serif font-bold mb-6">A Cinematic Legacy</h1>
+          <h1 className="text-5xl sm:text-7xl font-serif font-bold mb-6">A Creative Legacy</h1>
           <p className="text-xl text-gray-400 max-w-2xl mx-auto italic font-light">
-            "Celebrating four decades of iconic performances, from the sands of Tatooine 
-            to the West End stage."
+            From theatre stages to iconic film moments, Femi Taylor’s journey reflects a lifelong dedication to artistry, performance, and storytelling.
           </p>
         </motion.div>
       </div>

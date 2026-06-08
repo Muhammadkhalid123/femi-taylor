@@ -25,30 +25,13 @@ export default function BioVersions() {
         </div>
         <div className="prose prose-lg dark:prose-invert text-muted-foreground max-w-none">
           <p>
-            Femi Taylor's artistic journey began in Ibadan, Nigeria, before her family 
-            relocated to the United Kingdom. Her training at the prestigious London 
-            Contemporary Dance Company and the Alvin Ailey American Dance Theater in 
-            New York laid the foundation for a career defined by grace and versatility.
+            Nigerian-born performer and writer Femi Taylor is best known to Star Wars fans worldwide as Oola in Return of the Jedi, a role she uniquely reprised 14 years later for the 1997 Special Edition. George Lucas famously insisted that if Femi could no longer fit into her original costume, the character would need to be recreated digitally.
           </p>
           <p className="mt-4">
-            In 1981, Femi made theatre history as part of the original London cast of 
-            Andrew Lloyd Webber's Cats, originating the role of Tantomile. Her performance 
-            caught the eye of the Star Wars creative team, leading to her casting as Oola 
-            in Return of the Jedi (1983). Her portrayal of the Twi'lek dancer became an 
-            enduring part of the franchise's legacy, leading to her being the only original 
-            cast member invited back to film new scenes for the Special Edition in 1997.
+            Femi began her professional career at just 17 in the West End production of Bubbling Brown Sugar before becoming an original London cast member of Cats. Her extensive theatre credits also include Little Shop of Horrors, The Wiz, Buddy, and Jesus Christ Superstar. On screen, she has appeared in films including Playing Away, Flirting, Top Secret!, and the independent feature A Kink in the Picasso.
           </p>
           <p className="mt-4">
-            Throughout her career, Femi has balanced her work on screen with a deep 
-            commitment to live performance and global fan engagement. She is a regular 
-            guest at major sci-fi and Star Wars conventions worldwide, where she continues 
-            to inspire new generations of fans.
-          </p>
-          <p className="mt-4">
-            Today, Femi has transitioned into a new chapter as an author. Her memoirs 
-            explore the intersections of culture, fame, and personal growth, offering 
-            a rare glimpse into the life of a performer who has navigated some of 
-            the most significant moments in modern entertainment history.
+            Having lived and worked across the UK and Australia, Femi now brings her lifelong passion for performance and storytelling to the page through deeply personal writing exploring artistry, identity, resilience, and the journey of returning to oneself.
           </p>
         </div>
       </section>

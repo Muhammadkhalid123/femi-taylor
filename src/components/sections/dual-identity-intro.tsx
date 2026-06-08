@@ -34,25 +34,9 @@ export default function DualIdentityIntro() {
               </div>
               <h3 className="text-2xl font-serif font-bold">The Performer</h3>
             </div>
-            <p className="text-muted-foreground leading-relaxed mb-6">
-              As Oola in Star Wars: Return of the Jedi and an original cast member of Cats, 
-              Femi Taylor has graced international stages and screens, building a global 
-              fanbase that spans four decades.
+            <p className="text-muted-foreground leading-relaxed mb-8">
+              From the worlds of theatre and film to international conventions and live events, Femi Taylor’s career has spanned more than four decades. Best known for her portrayal of Oola in Star Wars: Return of the Jedi and as a member of the original London cast of Cats, her work reflects a lifelong dedication to performance, creativity, and storytelling.
             </p>
-            <ul className="space-y-3 mb-8 text-sm">
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 bg-accent rounded-full" />
-                Original Oola (Star Wars: Return of the Jedi)
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 bg-accent rounded-full" />
-                Originated Tantomile in Cats (London)
-              </li>
-              <li className="flex items-center gap-2">
-                <span className="w-1.5 h-1.5 bg-accent rounded-full" />
-                Exotica in Cats (1998 Film)
-              </li>
-            </ul>
             <Link href="/legacy" className="text-primary font-medium hover:underline inline-flex items-center gap-2">
               Explore Performance History →
             </Link>
@@ -80,9 +64,7 @@ export default function DualIdentityIntro() {
               <h3 className="text-2xl font-serif font-bold">The Author</h3>
             </div>
             <p className="opacity-90 leading-relaxed mb-6">
-              Now, Femi brings her unique journey and experiences to the page. 
-              Sharing stories from Ibadan, Nigeria to the sets of Star Wars, 
-              her writing captures a life lived at the intersection of magic and reality.
+              Now, Femi brings her unique journey and experiences to the page. From Ibadan, Nigeria, to the worlds of theatre, film, and Star Wars, her writing explores a life shaped by artistry, love, resilience, and self-discovery. Through honest and deeply personal storytelling, she reflects on the moments that have shaped her both on and beyond the stage and screen.
             </p>
             <ul className="space-y-3 mb-8 text-sm opacity-90">
               <li className="flex items-center gap-2">

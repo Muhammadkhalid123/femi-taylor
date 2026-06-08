@@ -21,12 +21,12 @@ export default function AuthorNote() {
           <h3 className="text-2xl font-serif font-bold mb-4">Why I Wrote This Book</h3>
           <div className="prose prose-lg italic text-muted-foreground leading-relaxed">
             <p>
-              "For years, people have asked me about the makeup, the dancing, and the set of Star Wars.
+              For years, people have asked me about the makeup, the dancing, and the set of Star Wars.
               But there was so much more to the story than just the character of Oola. I wrote this
-              book to share the human experience behind the icon—the girl who had to learn how to
+              book to share the human experience behind the role—the girl who had to learn how to
               navigate a world she never expected to be a part of. This is my truth, shared with
               the hope that it inspires you to embrace your own unique journey, no matter how
-              many galaxies away it might seem."
+              many galaxies away it might seem.
             </p>
           </div>
           <p className="mt-6 font-serif text-xl font-bold text-foreground">— Femi Taylor</p>

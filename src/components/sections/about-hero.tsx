@@ -19,9 +19,7 @@ export default function AboutHero() {
               Art, and Resilience.
             </h1>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              From her roots in Ibadan, Nigeria, to the international stages of London and the 
-              star-studded sets of a galaxy far, far away. Femi Taylor's story is one of 
-              unwavering passion and the courage to redefine herself at every stage of life.
+              From her beginnings in Ibadan, Nigeria, to the stages of London and the iconic worlds of film and theatre, Femi Taylor’s journey is one shaped by artistry, resilience, and self-discovery. Through every chapter of her life, she has continued to evolve, finding new ways to express herself both on and beyond the stage.
             </p>
           </motion.div>
 
