@@ -25,3 +25,7 @@ next-env.d.ts
 # IDE
 .idea
 .vscode
+
+# Client changes (raw DOCX files)
+/clientchanges/
+

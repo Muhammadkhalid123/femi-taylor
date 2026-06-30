@@ -13,7 +13,7 @@ export default function BioVersions() {
           Edition. Beyond the galaxy, Femi originated the role of Tantomile in the 1981 
           original London production of Cats and later appeared in the 1998 film version 
           as 'Exotica', a character created specifically for her. A graduate of the London 
-          Contemporary Dance Company and Alvin Ailey American Dance Theater, Femi is now 
+          School of Contemporary Dance and The Alvin Ailey School, Femi is now 
           an accomplished author, sharing her remarkable journey of art and resilience.
         </p>
       </section>

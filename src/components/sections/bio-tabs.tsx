@@ -17,8 +17,8 @@ const tabs = [
         "Star Wars: Return of the Jedi (Oola)",
         "Cats (Original London Cast - Tantomile)",
         "Cats (1998 Film - Exotica)",
-        "Trained at London Contemporary Dance Company",
-        "Alvin Ailey American Dance Theater (New York)",
+        "Trained at London School of Contemporary Dance",
+        "The Alvin Ailey School (New York)",
       ]
     }
   },
