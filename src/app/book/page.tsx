@@ -7,6 +7,7 @@ import AuthorNoteSection from "@/components/sections/author-note-section";
 import ReviewsSection from "@/components/sections/reviews-section";
 import SampleChapterSection from "@/components/sections/sample-chapter-section";
 import PageCta from "@/components/sections/page-cta";
+import { BOOK_LINKS } from "@/lib/book-links";
 
 export default function BookPage() {
   return (
@@ -20,11 +21,11 @@ export default function BookPage() {
       {/* <SampleChapterSection /> */}
       <PageCta
         title="Ready to Begin the Journey?"
-        description="Submit an inquiry to order your copy today — signed editions available while supplies last."
-        primaryLabel="Inquire to Order"
-        primaryHref="/contact?subject=Inquiry about ordering From Mud Huts to Star Wars and Beyond"
-        secondaryLabel="Explore Portfolio"
-        secondaryHref="/portfolio"
+        description="Order your copy today on Amazon or submit an inquiry for signed editions."
+        primaryLabel="Buy on Amazon"
+        primaryHref={BOOK_LINKS.main}
+        secondaryLabel="Inquire for Signed Edition"
+        secondaryHref="/contact?subject=Inquiry about Signed Edition of From Mud Huts to Star Wars and Beyond"
       />
       <Footer />
     </main>

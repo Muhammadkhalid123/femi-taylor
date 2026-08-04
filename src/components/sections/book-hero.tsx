@@ -2,19 +2,16 @@
 
 import { motion } from "framer-motion";
 import Image from "next/image";
-import { Mail, Check } from "lucide-react";
+import { Mail, Check, ShoppingBag, ExternalLink } from "lucide-react";
 import { useState } from "react";
 import Link from "next/link";
-
-const formats = [
-  { id: "hardcover", label: "Hardcover", price: "$24.99" },
-  { id: "paperback", label: "Paperback", price: "$14.99" },
-  { id: "ebook", label: "E-Book", price: "$9.99" },
-];
+import { BOOK_FORMATS, BOOK_LINKS } from "@/lib/book-links";
 
 export default function BookHero() {
-  const [selectedFormat, setSelectedFormat] = useState("hardcover");
-  const selectedLabel = formats.find((f) => f.id === selectedFormat)?.label || "Hardcover";
+  const [selectedFormatId, setSelectedFormatId] = useState<string>("hardcover");
+
+  const selectedFormat =
+    BOOK_FORMATS.find((f) => f.id === selectedFormatId) || BOOK_FORMATS[0];
 
   return (
     <section className="relative pt-32 pb-20 bg-background overflow-hidden">
@@ -27,7 +24,13 @@ export default function BookHero() {
             transition={{ duration: 0.8 }}
             className="flex-1 relative"
           >
-            <div className="relative w-full max-w-md aspect-[2/3] mx-auto shadow-[30px_30px_60px_-15px_rgba(0,0,0,0.4)] rounded-lg overflow-hidden border-4 border-white dark:border-gray-800">
+            <a
+              href={BOOK_LINKS.main}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group block relative w-full max-w-md aspect-[2/3] mx-auto shadow-[30px_30px_60px_-15px_rgba(0,0,0,0.4)] rounded-lg overflow-hidden border-4 border-white dark:border-gray-800 transform transition-transform duration-300 hover:scale-[1.02]"
+              title="View on Amazon"
+            >
               <Image
                 src="/femi-book.jpeg"
                 alt="From Mud Hut to Star Wars and Beyond Book Cover"
@@ -35,7 +38,12 @@ export default function BookHero() {
                 className="object-cover"
                 priority
               />
-            </div>
+              <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center gap-2 text-white font-medium">
+                <ShoppingBag size={20} />
+                <span>View on Amazon</span>
+                <ExternalLink size={16} />
+              </div>
+            </a>
           </motion.div>
 
           {/* Book Info */}
@@ -59,47 +67,79 @@ export default function BookHero() {
 
               {/* Format Selector */}
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
-                {formats.map((format) => (
-                  <button
-                    key={format.id}
-                    onClick={() => setSelectedFormat(format.id)}
-                    className={`p-4 rounded-2xl border-2 transition-all flex flex-col items-center gap-1 ${selectedFormat === format.id
-                      ? "border-primary bg-primary/5 shadow-md"
-                      : "border-border hover:border-primary/50"
+                {BOOK_FORMATS.map((format) => {
+                  const isSelected = selectedFormatId === format.id;
+                  return (
+                    <div
+                      key={format.id}
+                      onClick={() => setSelectedFormatId(format.id)}
+                      className={`p-4 rounded-2xl border-2 transition-all flex flex-col items-center gap-1 cursor-pointer relative group ${
+                        isSelected
+                          ? "border-primary bg-primary/5 shadow-md"
+                          : "border-border hover:border-primary/50"
                       }`}
-                  >
-                    <span className="text-xs uppercase tracking-widest font-bold opacity-60">
-                      {format.label}
-                    </span>
-                    <span className="text-xl font-bold">{format.price}</span>
-                    {selectedFormat === format.id && (
-                      <Check size={16} className="text-primary mt-1" />
-                    )}
-                  </button>
-                ))}
+                    >
+                      <span className="text-xs uppercase tracking-widest font-bold opacity-60">
+                        {format.label}
+                      </span>
+                      <span className="text-xl font-bold">{format.price}</span>
+
+                      <div className="flex items-center gap-2 mt-1">
+                        {isSelected && (
+                          <span className="flex items-center text-xs text-primary font-medium">
+                            <Check size={14} className="mr-0.5" /> Selected
+                          </span>
+                        )}
+                        <a
+                          href={format.url}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          onClick={(e) => e.stopPropagation()}
+                          className="text-xs text-muted-foreground hover:text-primary flex items-center gap-0.5 underline decoration-dotted"
+                          title={`Buy ${format.label} on Amazon`}
+                        >
+                          Amazon <ExternalLink size={10} />
+                        </a>
+                      </div>
+                    </div>
+                  );
+                })}
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row items-center gap-4">
-              <Link
-                href={`/contact?subject=Inquiry about ordering ${selectedLabel} edition of From Mud Hut to Star Wars and Beyond`}
-                className="w-full sm:w-auto px-10 py-5 bg-primary text-white rounded-full font-bold flex items-center justify-center gap-3 hover:bg-primary/90 transition-all shadow-xl shadow-primary/20 transform hover:-translate-y-1"
+            {/* Action Buttons */}
+            <div className="flex flex-col sm:flex-row flex-wrap items-center gap-4">
+              <a
+                href={selectedFormat.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full sm:w-auto px-8 py-5 bg-primary text-white rounded-full font-bold flex items-center justify-center gap-3 hover:bg-primary/90 transition-all shadow-xl shadow-primary/20 transform hover:-translate-y-1"
               >
-                <Mail size={20} />
-                Inquire to Buy
+                <ShoppingBag size={20} />
+                <span>Buy {selectedFormat.label} on Amazon ({selectedFormat.price})</span>
+                <ExternalLink size={16} />
+              </a>
+
+              <Link
+                href={`/contact?subject=Inquiry about ordering ${selectedFormat.label} edition of From Mud Hut to Star Wars and Beyond`}
+                className="w-full sm:w-auto px-6 py-5 bg-muted hover:bg-muted/80 text-foreground border border-border rounded-full font-bold flex items-center justify-center gap-2 transition-all transform hover:-translate-y-1"
+              >
+                <Mail size={18} />
+                <span>Inquire to Buy</span>
               </Link>
+
               <Link
                 href="/contact?subject=Inquiry about Signed Edition of From Mud Hut to Star Wars and Beyond"
-                className="w-full sm:w-auto px-10 py-5 bg-accent text-accent-foreground rounded-full font-bold flex items-center justify-center gap-3 hover:bg-accent/90 transition-all transform hover:-translate-y-1"
+                className="w-full sm:w-auto px-6 py-5 bg-accent text-accent-foreground rounded-full font-bold flex items-center justify-center gap-2 hover:bg-accent/90 transition-all transform hover:-translate-y-1"
               >
-                <Mail size={20} />
-                Get Signed Edition
+                <Mail size={18} />
+                <span>Get Signed Edition</span>
               </Link>
             </div>
 
-            <div className="mt-8 flex items-center justify-center lg:justify-start gap-6 text-sm text-muted-foreground font-medium">
+            <div className="mt-8 flex items-center justify-center lg:justify-start gap-6 text-sm text-muted-foreground font-medium flex-wrap">
               <span className="flex items-center gap-1">
-                <Check size={16} className="text-green-500" /> Secure Checkout
+                <Check size={16} className="text-green-500" /> Amazon Verified Link
               </span>
               <span className="flex items-center gap-1">
                 <Check size={16} className="text-green-500" /> Fast Shipping

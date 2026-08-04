@@ -48,28 +48,59 @@ export default function PageCta({
             {description}
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <Link
-              href={primaryHref}
-              className={
-                isAccent
-                  ? "px-8 py-4 bg-accent text-accent-foreground rounded-full font-bold hover:opacity-90 transition-all flex items-center gap-2"
-                  : "px-8 py-4 bg-primary text-white rounded-full font-bold hover:bg-primary/90 transition-all flex items-center gap-2"
-              }
-            >
-              {primaryLabel}
-              <ArrowRight size={18} />
-            </Link>
-            {secondaryLabel && secondaryHref && (
-              <Link
-                href={secondaryHref}
+            {primaryHref.startsWith("http") ? (
+              <a
+                href={primaryHref}
+                target="_blank"
+                rel="noopener noreferrer"
                 className={
                   isAccent
-                    ? "px-8 py-4 border border-white/30 rounded-full font-bold hover:bg-white/10 transition-all"
-                    : "px-8 py-4 border border-primary text-primary rounded-full font-bold hover:bg-primary/5 transition-all"
+                    ? "px-8 py-4 bg-accent text-accent-foreground rounded-full font-bold hover:opacity-90 transition-all flex items-center gap-2"
+                    : "px-8 py-4 bg-primary text-white rounded-full font-bold hover:bg-primary/90 transition-all flex items-center gap-2"
                 }
               >
-                {secondaryLabel}
+                {primaryLabel}
+                <ArrowRight size={18} />
+              </a>
+            ) : (
+              <Link
+                href={primaryHref}
+                className={
+                  isAccent
+                    ? "px-8 py-4 bg-accent text-accent-foreground rounded-full font-bold hover:opacity-90 transition-all flex items-center gap-2"
+                    : "px-8 py-4 bg-primary text-white rounded-full font-bold hover:bg-primary/90 transition-all flex items-center gap-2"
+                }
+              >
+                {primaryLabel}
+                <ArrowRight size={18} />
               </Link>
+            )}
+            {secondaryLabel && secondaryHref && (
+              secondaryHref.startsWith("http") ? (
+                <a
+                  href={secondaryHref}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={
+                    isAccent
+                      ? "px-8 py-4 border border-white/30 rounded-full font-bold hover:bg-white/10 transition-all"
+                      : "px-8 py-4 border border-primary text-primary rounded-full font-bold hover:bg-primary/5 transition-all"
+                  }
+                >
+                  {secondaryLabel}
+                </a>
+              ) : (
+                <Link
+                  href={secondaryHref}
+                  className={
+                    isAccent
+                      ? "px-8 py-4 border border-white/30 rounded-full font-bold hover:bg-white/10 transition-all"
+                      : "px-8 py-4 border border-primary text-primary rounded-full font-bold hover:bg-primary/5 transition-all"
+                  }
+                >
+                  {secondaryLabel}
+                </Link>
+              )
             )}
           </div>
         </motion.div>

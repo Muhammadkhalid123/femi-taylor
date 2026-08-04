@@ -4,6 +4,7 @@ import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { FileText, Download, ArrowRight, ChevronDown, Mail } from "lucide-react";
 import Link from "next/link";
+import { BOOK_LINKS } from "@/lib/book-links";
 
 const sampleText = `I still remember the first time I stepped onto that stage in London. The lights were blinding, the orchestra was swelling, and my heart was pounding so hard I thought everyone in the audience could hear it.
 
@@ -76,13 +77,23 @@ export default function SampleChapter() {
           &ldquo;I wanted to share this part of my story because it&apos;s where everything began.
           The fear, the excitement, and the unknown.&rdquo;
         </p>
-        <Link
-          href="/contact?subject=Inquiry about ordering the book From Mud Huts to Star Wars and Beyond"
-          className="w-full py-4 bg-primary text-white rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-primary/90 transition-all text-center"
-        >
-          <span>Inquire to Order</span>
-          <ArrowRight size={18} />
-        </Link>
+        <div className="flex flex-col gap-3">
+          <a
+            href={BOOK_LINKS.main}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full py-4 bg-primary text-white rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-primary/90 transition-all text-center"
+          >
+            <span>Buy on Amazon</span>
+            <ArrowRight size={18} />
+          </a>
+          <Link
+            href="/contact?subject=Inquiry about ordering the book From Mud Huts to Star Wars and Beyond"
+            className="w-full py-3 bg-muted text-foreground border border-border rounded-xl font-medium flex items-center justify-center gap-2 hover:bg-muted/80 transition-all text-center text-sm"
+          >
+            <span>Inquire for Signed Edition</span>
+          </Link>
+        </div>
       </div>
     </div>
   );
